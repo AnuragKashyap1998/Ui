@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="anurag.ui.MainActivity2"
+    tools:showIn="@layout/activity_main2">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/cardView"
+        app:cardCornerRadius="10dp"
+        >
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:layout_above="@+id/time"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/title"
+            android:layout_weight="0.36"
+            android:hint="Notes" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="370dp"
+            android:layout_height="100dp"
+            android:hint="Title"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_toStartOf="@+id/time" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp"
+        app:cardCornerRadius="10dp">
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cardView"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            android:hint="Date" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp">
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="172dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/date"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/date"
+            android:focusable="false"
+            android:hint="Time" />
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
